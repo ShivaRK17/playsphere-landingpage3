@@ -1,0 +1,13 @@
+.smallicons{
+    transition: all 0.2s linear;
+}
+.smallicons:hover{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.436) 10%, var(--bg) 90%);   
+}
+.smallicons img{
+    transition: all 0.2s linear;
+    height: 50px;
+}
+.smallicons:hover img{
+    filter: brightness(0%) invert(1);
+}
