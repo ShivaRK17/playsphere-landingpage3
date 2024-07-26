@@ -5,7 +5,7 @@ import logo from '../assets/hero/logo.svg'
 import bg from '../assets/hero/bg.svg'
 const Hero = () => {
   return (
-    <div style={{backgroundImage:`url(${bg})`,backgroundSize:'cover',backgroundBlendMode:'overlay'}} className="w-full relative flex flex-col md:flex-row min-h-screen h-screen bg-gradient-to-r from-purple-900 via-blue-900 to-green-900 text-white">
+    <div style={{backgroundImage:`url(${bg})`,backgroundSize:'cover',backgroundBlendMode:'overlay'}} className="w-full relative flex flex-col md:flex-row min-h-screen h-screen text-white">
       <div className="text-center md:text-left md:w-2/3 w-full h-full flex flex-col justify-center md:items-start items-center p-10 px-20">
         <img src={logo} alt="Logo" className='absolute w-[70px] top-0 left-0 m-5' />
         <h1 className="text-4xl md:text-5xl mb-10 text-[#6600FF] font-bungee tracking-[0.2em]">PLAYSPHERE <span className='font-roboto font-bold'>AI</span></h1>
