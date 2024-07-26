@@ -2,7 +2,7 @@ import React from 'react'
 import Roboface from '../assets/hero/roboface.png'
 import Roboface1 from '../assets/hero/roboface1.png'
 import logo from '../assets/hero/logo.svg'
-import bg from '../assets/hero/bg.svg'
+import bg from '../assets/hero/bg.png'
 const Hero = () => {
   return (
     <div style={{backgroundImage:`url(${bg})`,backgroundSize:'cover',backgroundBlendMode:'overlay'}} className="w-full relative flex flex-col md:flex-row min-h-screen bg-transparent h-screen text-white">

@@ -7,7 +7,7 @@ import telegram from '../assets/socials/telegram.png'
 import linkedin from '../assets/socials/linkedin.png'
 import footerlogo from '../assets/footer/footerlogo.png'
 import footerbg from '../assets/footer/footerbg.png'
-import footershine from '../assets/footer/footershine.svg'
+import footershine from '../assets/footer/footershine.png'
 
 const Footer = () => {
     return (
