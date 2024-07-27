@@ -29,6 +29,7 @@ const HowItWorks = () => {
             desc: "Earn as players use your creations. Build a portfolio of valuable digital assets."
         }
     ];
+    const color = perks.filter((e)=>(e.id===id))[0].color
 
     return (
         <>
@@ -37,7 +38,7 @@ const HowItWorks = () => {
                     HOW IT WORKS
                 </h2>
             </div>
-            <div className="bg-gradient-to-b from-[#6600FF] to-black text-white p-8  min-h-screen flex flex-col md:flex-row justify-around items-center shadow-lg">
+            <div style={{background:`linear-gradient(to bottom, ${color}, black)`}} className={`text-white p-8  min-h-screen flex flex-col md:flex-row justify-around items-center shadow-lg`}>
                 <div className="flex-1 flex flex-col md:flex-row items-center mb-8 md:mb-0">
                     <div className="flex flex-row mx-2 space-x-4 md:space-x-2">
                         {/* {perks.map((perk) => (
