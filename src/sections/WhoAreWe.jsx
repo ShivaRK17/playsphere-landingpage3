@@ -3,8 +3,8 @@ import Blob from '../components/Blob';
 
 const WhoAreWe = () => {
     return (
-        <div className="flex relative items-center justify-center text-white px-4 font-filson">
-            <div className='absolute'>
+        <div className="flex relative items-center justify-center text-white px-4 py-10 font-filson">
+            <div className='absolute h-full'>
                 <Blob/>
             </div>
             <div className="z-10 tracking-widest lg:w-[40%] xl:w-[40%] 2xl:w-[40%] w-full flex justify-center flex-col mx-auto">

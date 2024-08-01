@@ -10,10 +10,11 @@ const Hero = () => {
         backgroundImage: `url(${bg})`,
         backgroundSize: 'cover',
         backgroundBlendMode: 'overlay',
+        backgroundPosition:'bottom'
       }}
-      className="w-full relative flex flex-col md:flex-row min-h-screen bg-transparent h-screen text-white"
+      className="w-full z-10 relative flex flex-col md:flex-row min-h-screen bg-transparent h-screen text-white"
     >
-      <div className="text-center md:text-left md:w-[70%] w-full h-full flex flex-col justify-center md:items-start items-center p-10 md:px-20 lg:px-32 xl:px-40 2xl:px-52">
+      <div className="text-center z-10 md:text-left md:w-[70%] w-full h-full flex flex-col justify-center md:items-start items-center p-10 md:px-20 lg:px-32 xl:px-40 2xl:px-52">
         <img
           src={logo}
           alt="Logo"

@@ -19,11 +19,15 @@ import featurebg2 from '../assets/features/featurebg2.png'
 import './features.css'
 const Features = () => {
     return (
-        <div className='w-full z-10 bg-black flex justify-center relative'>
+        <div className='w-full z-10 bg-black flex flex-col items-center justify-center relative'>
             <img src={featurebg1} alt="" className='absolute right-0 top-0 object-cover h-[70%]' />
             <img src={featurebg2} alt="" className='absolute right-0 bottom-0 z-1 object-cover w-full' />
-            <div className="w-[85%] 2xl:w-[85%] bg-black text-white flex flex-col w-full">
-                <h1 className='text-4xl my-5 font-bold font-filson tracking-widest'>FEATURES</h1>
+            <div className='w-full flex items-center justify-center py-20 bg-black text-white'>
+                <h2 className='font-bold font-filson text-4xl w-[85%] mt-5 tracking-wider'>
+                    FEATURES
+                </h2>
+            </div>
+            <div className="w-[85%] bg-black text-white flex flex-col">
                 <div className="my-10 z-10 flex items-center justify-between border-[1px] border-slate-400 rounded-[10px] bg-gray-900 bg-opacity-75 font-roboto flex-col md:flex-row items-center justify-between">
                     <img src={feature1} alt="Magic Wand" className="rounded-[10px] w-full h-full md:w-[45%] opacity-90" />
                     <div className="text-center flex flex-col justify-center md:text-left md:flex-1 p-8">
