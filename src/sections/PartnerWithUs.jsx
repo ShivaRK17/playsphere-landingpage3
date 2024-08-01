@@ -6,6 +6,7 @@ import image3 from '../assets/partner/image3.png'
 import imageb1 from '../assets/partner/imageb1.png'
 import imageb2 from '../assets/partner/imageb2.png'
 import imageb3 from '../assets/partner/imageb3.png'
+import partnerbg from '../assets/partner/partnerbg.png'
 
 const Card1 = ({ isFlipped }) => {
     const [flipped, setFlipped] = useState(isFlipped);
@@ -73,7 +74,7 @@ const Card2 = ({ isFlipped }) => {
                     </div>
                 </div>
                 <div key="back" className="">
-                    <div className="flex items-center justify-center w-[320px] h-[340px] ">
+                    <div className="flex items-center justify-center w-[320px] h-[340px]">
                         <div style={{ backgroundImage: `url(${imageb2})`,backgroundSize:'cover' }} className="bg-[#00FFAB] text-white p-4 rounded-3xl shadow-lg w-full h-full overflow-hidden border-[3px] border-green-700">
                             <p className="text-center text-sm font-semibold mb-5 font-filson">
                                 Reach web3 native gamers through the PlaySphere Network with immersive in-game brand activations.
@@ -150,10 +151,14 @@ const Card3 = ({ isFlipped }) => {
 
 const PartnerWithUs = () => {
     return (
-        <div className="bg-black text-white py-16">
-            <h2 className="text-3xl md:text-4xl font-bold mx-10 font-filson mb-12">PARTNER WITH US</h2>
-
-            <div className="flex flex-col font-filson md:flex-row justify-around items-center space-y-6  md:space-y-0 md:space-x-6  ">
+        <div className="text-white pb-[150px] w-full relative">
+            <img src={partnerbg} className='absolute w-full bottom-0' alt="" />
+            <div className='w-full flex items-center justify-center py-20 text-white'>
+                <h2 className='font-bold font-filson text-4xl w-[85%] my-5 tracking-wider'>
+                    PARTNER WITH US
+                </h2>
+            </div>
+            <div className="flex flex-col flex-wrap font-filson md:flex-row justify-around items-center space-y-6  md:space-y-0 md:space-x-6 bg-transparent ">
                 <Card1 isFlipped={false} />
                 <Card2 isFlipped={false} />
                 <Card3 isFlipped={false} />

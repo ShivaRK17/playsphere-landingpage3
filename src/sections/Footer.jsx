@@ -27,6 +27,7 @@ const Footer = () => {
                 <img
                     src={logo}
                     alt="Follower"
+                    className='md:w-[50px] md:h-[50px] lg:w-[50px] lg:h-[50px] xl:w-[50px] xl:h-[50px] 2xl:w-[50px] 2xl:h-[50px] w-0 h-0'
                     style={{
                         position: 'absolute',
                         left: position.x,
@@ -34,8 +35,6 @@ const Footer = () => {
                         zIndex:100,
                         transform: 'translate(-50%, -50%)',
                         pointerEvents: 'none',
-                        width: '50px', // Adjust the size of the image as needed
-                        height: '50px',
                     }}
                 />
                 <div className='bg-gradient-to-b from-[#6600ff] to-black  text-white flex flex-col items-center opacity-90 justify-center py-20'>
@@ -51,7 +50,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url(${footershine})`, backgroundSize: 'cover', backgroundPosition: 'center' }} className='py-20 bg-black flex justify-center items-center'>
+                <div style={{ backgroundImage: `url(${footershine})`, backgroundSize: 'cover', backgroundPosition: 'center 20px',backgroundRepeat:'no-repeat' }} className='py-[130px] w-full bg-black flex justify-center items-center'>
                     <img className="w-[250px] " src={footerlogo} alt="" />
                 </div>
             </div>

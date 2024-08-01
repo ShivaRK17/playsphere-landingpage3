@@ -25,7 +25,7 @@ function App() {
   }, [init]);
   return (
     <>
-       {init && <Particles options={particlesOptions} />}
+       {/* init && <Particles options={particlesOptions} /> */}
       <Hero />
       <WhoAreWe />
       <Features />
